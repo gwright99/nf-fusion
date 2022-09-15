@@ -18,6 +18,9 @@ process WhereAmI {
     echo '---'
     cp .command.sh test_for_rob.sh
     ls -al
+    echo '---'
+    cp .command.sh /fusion/s3/dovetailtroubleshooting/loxofusion/this_was_uploaded_via_fusion_cp.sh
+    touch /fusion/s3/dovetailtroubleshooting/loxofusion/this_was_created_by_touch_via_WhereAmI_process.txt
     '''
 }
 
