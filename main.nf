@@ -1,3 +1,5 @@
+nextflow.enable.dsl=2
+
 process WhereAmI {
     memory 1G
     cpus 1 
