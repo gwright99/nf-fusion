@@ -8,11 +8,11 @@ process WhereAmI {
     output:
     path('outfile')
 
-    ```
+    '''
     pwd
     ls -al
     mv infile outfile
-    ```
+    '''
 }
 
 
