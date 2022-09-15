@@ -1,6 +1,7 @@
 nextflow.enable.dsl=2
 
 process WhereAmI {
+    debug true
     memory 1G
     cpus 1 
 
