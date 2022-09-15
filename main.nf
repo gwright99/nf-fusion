@@ -14,6 +14,9 @@ process WhereAmI {
     pwd
     ls -al
     mv infile outfile
+    echo '---'
+    cp .command.sh test_for_rob.sh
+    ls -al
     '''
 }
 
