@@ -22,9 +22,20 @@ process WhereAmI {
 }
 
 
+process DoesInputUseFusion {
+    memory 1G
+    cpus 1 
+
+    input:
+    path(infile)
+
+    "du -sh $infile"
+}
+
+
 workflow {
     ints = Channel.of(1..params.procs)
 
     data = Channel.fromPath(params.infile)
-    WhereAmI(data)
+    WhereAmI(data) | DoesInputUseFusion
 }
